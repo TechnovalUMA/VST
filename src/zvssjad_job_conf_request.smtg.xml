@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SMTG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SMTG>
+    <HEADER>
+     <ID>ZVSSJAD_JOB_CONF_REQUEST</ID>
+     <VERSION>A</VERSION>
+     <IS_PREDELIVERED>X</IS_PREDELIVERED>
+    </HEADER>
+    <HEADER_T>
+     <SMTG_TMPL_HDR_T>
+      <ID>ZVSSJAD_JOB_CONF_REQUEST</ID>
+      <VERSION>A</VERSION>
+      <LANGU>E</LANGU>
+      <NAME>VSS Job Confirmation</NAME>
+     </SMTG_TMPL_HDR_T>
+    </HEADER_T>
+    <CONTENT>
+     <SMTG_TMPL_CONT>
+      <ID>ZVSSJAD_JOB_CONF_REQUEST</ID>
+      <VERSION>A</VERSION>
+      <LANGU>E</LANGU>
+      <SUBJECT>Request to approve additional tasks</SUBJECT>
+      <BODY_TXT>Dear Customer,
+While inspecting the vehicle {lic_plate}, we have identified additional tasks to be carried out. 
+Job description: {job_description}
+Estimated cost: {cost} {currency}
+Please use the buttons below to confirm or defer the tasks.
+ 
+Defer Job →
+ 
+Confirm Job →
+ 
+I&apos;m not interested →</BODY_TXT>
+      <BODY_HTML>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;HTML Tidy for HTML5 for ABAP version 5.6.0&quot;&gt;
+  &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;table style=&quot;border-collapse: collapse;&quot; border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;20&quot;&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;table style=&quot;border: 1px solid #cccccc; border-collapse: collapse;&quot; width=&quot;600&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;center&quot;&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td style=&quot;color: #ffffff; padding: 20px 30px 20px 30px; font-family: Arial, sans-serif; font-size: 20px;&quot; align=&quot;right&quot; bgcolor=&quot;#1F497D&quot;&gt;&lt;img style=&quot;display: block;&quot; src=&quot;{LOGO_BASE64}&quot; alt=&quot;Logo&quot; width=&quot;81&quot; height=&quot;81&quot;&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td style=&quot;padding: 40px 30px 40px 30px;&quot; bgcolor=&quot;#FFFFFF&quot;&gt;
+                  &lt;table style=&quot;height: 240px; width: 100%;&quot; border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                    &lt;tbody&gt;
+                      &lt;tr style=&quot;height: 19px;&quot;&gt;
+                        &lt;td style=&quot;font-family: Calibri, sans-serif; font-size: 15px; height: 19px;&quot;&gt;Dear Customer,&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr style=&quot;height: 172px;&quot;&gt;
+                        &lt;td style=&quot;padding: 20px 0px 30px; font-family: Calibri, open-sans; font-size: 15px; height: 172px;&quot;&gt;
+                          &lt;p&gt;While inspecting the vehicle &lt;strong&gt;{lic_plate}&lt;/strong&gt;, we have identified additional tasks to be carried out.&amp;nbsp;&lt;/p&gt;
+                          &lt;p&gt;Job description: &lt;strong&gt;{job_description}&lt;/strong&gt;&lt;/p&gt;
+                          &lt;p&gt;Estimated cost: &lt;strong&gt;{cost} {currency}&lt;/strong&gt;&lt;/p&gt;
+                          &lt;p&gt;Please use the buttons below to confirm or defer the tasks.&lt;/p&gt;
+                          &lt;table style=&quot;height: 50px; width: 100%; border-collapse: collapse; border-style: none;&quot; border=&quot;0&quot;&gt;
+                            &lt;tbody&gt;
+                              &lt;tr style=&quot;height: 49px;&quot;&gt;
+                                &lt;td style=&quot;width: 10%; padding: 12px 18px 12px 18px; border-radius: 5px; background-color: #fff;&quot; align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                                &lt;td style=&quot;width: 35%;&quot; align=&quot;center&quot;&gt;
+                                  &lt;form action=&quot;{URL_DEFER}&quot; method=&quot;get&quot;&gt;
+                                    &lt;div&gt;
+                                      &lt;input id=&quot;v&quot; name=&quot;v&quot; type=&quot;hidden&quot; value=&quot;{VBELN}&quot;&gt; &lt;input id=&quot;g&quot; name=&quot;g&quot; type=&quot;hidden&quot; value=&quot;{VGUID}&quot;&gt; &lt;input id=&quot;j&quot; name=&quot;j&quot; type=&quot;hidden&quot; value=&quot;{JOBNR}&quot;&gt;
+                                    &lt;/div&gt;
+                                    &lt;div&gt;
+                                      &lt;div&gt;
+                                        &lt;button style=&quot;font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none; display: inline-block; width: 100%; padding: 12px 18px 12px 18px; background-color: #d4d0cf; border-radius: 5px; border: none;&quot;&gt;Defer Job →&lt;/button&gt;
+                                      &lt;/div&gt;
+                                    &lt;/div&gt;
+                                  &lt;/form&gt;
+                                &lt;/td&gt;
+                                &lt;td style=&quot;width: 10%; padding: 12px 18px 12px 18px; border-radius: 5px; background-color: #fff;&quot; align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                                &lt;td style=&quot;width: 35%;&quot; align=&quot;center&quot;&gt;
+                                  &lt;form action=&quot;{URL_CONFIRM}&quot; method=&quot;get&quot;&gt;
+                                    &lt;div&gt;
+                                      &lt;input id=&quot;v&quot; name=&quot;v&quot; type=&quot;hidden&quot; value=&quot;{VBELN}&quot;&gt; &lt;input id=&quot;g&quot; name=&quot;g&quot; type=&quot;hidden&quot; value=&quot;{VGUID}&quot;&gt; &lt;input id=&quot;j&quot; name=&quot;j&quot; type=&quot;hidden&quot; value=&quot;{JOBNR}&quot;&gt;
+                                    &lt;/div&gt;
+                                    &lt;div&gt;
+                                      &lt;div&gt;
+                                        &lt;button style=&quot;font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none; display: inline-block; background-color: #1f7f4c; color: #ffffff; width: 100%; padding: 12px 18px 12px 18px; border-radius: 5px; border: none;&quot;&gt;Confirm Job →&lt;/button&gt;
+                                      &lt;/div&gt;
+                                    &lt;/div&gt;
+                                  &lt;/form&gt;
+                                &lt;/td&gt;
+                                &lt;td style=&quot;width: 10%; padding: 12px 18px 12px 18px; border-radius: 5px; background-color: #fff;&quot; align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                              &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                          &lt;/table&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr style=&quot;height: 65px;&quot;&gt;
+                        &lt;td style=&quot;width: 598px; height: 65px;&quot; align=&quot;center&quot;&gt;
+                          &lt;form action=&quot;{URL_REJECT}&quot; method=&quot;get&quot;&gt;
+                            &lt;div&gt;
+                              &lt;input id=&quot;v&quot; name=&quot;v&quot; type=&quot;hidden&quot; value=&quot;{VBELN}&quot;&gt; &lt;input id=&quot;g&quot; name=&quot;g&quot; type=&quot;hidden&quot; value=&quot;{VGUID}&quot;&gt; &lt;input id=&quot;j&quot; name=&quot;j&quot; type=&quot;hidden&quot; value=&quot;{JOBNR}&quot;&gt;
+                            &lt;/div&gt;
+                            &lt;div&gt;
+                              &lt;div&gt;
+                                &lt;button style=&quot;font-size: 16px; font-family: Helvetica, Arial, sans-serif; color: #102259 ; text-decoration: underline; display: inline-block; background-color: #ffffff; padding: 12px 18px 12px 18px; border-radius: 5px; border:none&quot;&gt;I&apos;m not interested →&lt;/button&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/form&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                  &lt;/table&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</BODY_HTML>
+      <AUTOGEN_TXT>X</AUTOGEN_TXT>
+     </SMTG_TMPL_CONT>
+     <SMTG_TMPL_CONT>
+      <ID>ZVSSJAD_JOB_CONF_REQUEST</ID>
+      <VERSION>A</VERSION>
+      <LANGU>2</LANGU>
+      <SUBJECT>Request to approve additional tasks</SUBJECT>
+      <BODY_TXT>Dear Customer,
+While inspecting the vehicle {lic_plate}, we have identified additional tasks to be carried out. 
+Job description: {job_description}
+Estimated cost: {cost} {currency}
+Please use the buttons below to confirm or defer the tasks.
+ 
+Defer Job →
+ 
+Confirm Job →
+ 
+I&apos;m not interested →</BODY_TXT>
+      <BODY_HTML>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta name=&quot;generator&quot; content=&quot;HTML Tidy for HTML5 for ABAP version 5.6.0&quot;&gt;
+  &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;table style=&quot;border-collapse: collapse;&quot; border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;20&quot;&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;
+          &lt;table style=&quot;border: 1px solid #cccccc; border-collapse: collapse;&quot; width=&quot;600&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; align=&quot;center&quot;&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td style=&quot;color: #ffffff; padding: 20px 30px 20px 30px; font-family: Arial, sans-serif; font-size: 20px;&quot; align=&quot;right&quot; bgcolor=&quot;#1F497D&quot;&gt;&lt;img style=&quot;display: block;&quot; src=&quot;{LOGO_BASE64}&quot; alt=&quot;Logo&quot; width=&quot;81&quot; height=&quot;81&quot;&gt;&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td style=&quot;padding: 40px 30px 40px 30px;&quot; bgcolor=&quot;#FFFFFF&quot;&gt;
+                  &lt;table style=&quot;height: 240px; width: 100%;&quot; border=&quot;0&quot; width=&quot;100%&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+                    &lt;tbody&gt;
+                      &lt;tr style=&quot;height: 19px;&quot;&gt;
+                        &lt;td style=&quot;font-family: Calibri, sans-serif; font-size: 15px; height: 19px;&quot;&gt;Dear Customer,&lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr style=&quot;height: 172px;&quot;&gt;
+                        &lt;td style=&quot;padding: 20px 0px 30px; font-family: Calibri, open-sans; font-size: 15px; height: 172px;&quot;&gt;
+                          &lt;p&gt;While inspecting the vehicle &lt;strong&gt;{lic_plate}&lt;/strong&gt;, we have identified additional tasks to be carried out.&amp;nbsp;&lt;/p&gt;
+                          &lt;p&gt;Job description: &lt;strong&gt;{job_description}&lt;/strong&gt;&lt;/p&gt;
+                          &lt;p&gt;Estimated cost: &lt;strong&gt;{cost} {currency}&lt;/strong&gt;&lt;/p&gt;
+                          &lt;p&gt;Please use the buttons below to confirm or defer the tasks.&lt;/p&gt;
+                          &lt;table style=&quot;height: 50px; width: 100%; border-collapse: collapse; border-style: none;&quot; border=&quot;0&quot;&gt;
+                            &lt;tbody&gt;
+                              &lt;tr style=&quot;height: 49px;&quot;&gt;
+                                &lt;td style=&quot;width: 10%; padding: 12px 18px 12px 18px; border-radius: 5px; background-color: #fff;&quot; align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                                &lt;td style=&quot;width: 35%;&quot; align=&quot;center&quot;&gt;
+                                  &lt;form action=&quot;{URL_DEFER}&quot; method=&quot;get&quot;&gt;
+                                    &lt;div&gt;
+                                      &lt;input id=&quot;v&quot; name=&quot;v&quot; type=&quot;hidden&quot; value=&quot;{VBELN}&quot;&gt; &lt;input id=&quot;g&quot; name=&quot;g&quot; type=&quot;hidden&quot; value=&quot;{VGUID}&quot;&gt; &lt;input id=&quot;j&quot; name=&quot;j&quot; type=&quot;hidden&quot; value=&quot;{JOBNR}&quot;&gt;
+                                    &lt;/div&gt;
+                                    &lt;div&gt;
+                                      &lt;div&gt;
+                                        &lt;button style=&quot;font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none; display: inline-block; width: 100%; padding: 12px 18px 12px 18px; background-color: #d4d0cf; border-radius: 5px; border: none;&quot;&gt;Defer Job →&lt;/button&gt;
+                                      &lt;/div&gt;
+                                    &lt;/div&gt;
+                                  &lt;/form&gt;
+                                &lt;/td&gt;
+                                &lt;td style=&quot;width: 10%; padding: 12px 18px 12px 18px; border-radius: 5px; background-color: #fff;&quot; align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                                &lt;td style=&quot;width: 35%;&quot; align=&quot;center&quot;&gt;
+                                  &lt;form action=&quot;{URL_CONFIRM}&quot; method=&quot;get&quot;&gt;
+                                    &lt;div&gt;
+                                      &lt;input id=&quot;v&quot; name=&quot;v&quot; type=&quot;hidden&quot; value=&quot;{VBELN}&quot;&gt; &lt;input id=&quot;g&quot; name=&quot;g&quot; type=&quot;hidden&quot; value=&quot;{VGUID}&quot;&gt; &lt;input id=&quot;j&quot; name=&quot;j&quot; type=&quot;hidden&quot; value=&quot;{JOBNR}&quot;&gt;
+                                    &lt;/div&gt;
+                                    &lt;div&gt;
+                                      &lt;div&gt;
+                                        &lt;button style=&quot;font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; text-decoration: none; display: inline-block; background-color: #1f7f4c; color: #ffffff; width: 100%; padding: 12px 18px 12px 18px; border-radius: 5px; border: none;&quot;&gt;Confirm Job →&lt;/button&gt;
+                                      &lt;/div&gt;
+                                    &lt;/div&gt;
+                                  &lt;/form&gt;
+                                &lt;/td&gt;
+                                &lt;td style=&quot;width: 10%; padding: 12px 18px 12px 18px; border-radius: 5px; background-color: #fff;&quot; align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt;
+                              &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                          &lt;/table&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;tr style=&quot;height: 65px;&quot;&gt;
+                        &lt;td style=&quot;width: 598px; height: 65px;&quot; align=&quot;center&quot;&gt;
+                          &lt;form action=&quot;{URL_REJECT}&quot; method=&quot;get&quot;&gt;
+                            &lt;div&gt;
+                              &lt;input id=&quot;v&quot; name=&quot;v&quot; type=&quot;hidden&quot; value=&quot;{VBELN}&quot;&gt; &lt;input id=&quot;g&quot; name=&quot;g&quot; type=&quot;hidden&quot; value=&quot;{VGUID}&quot;&gt; &lt;input id=&quot;j&quot; name=&quot;j&quot; type=&quot;hidden&quot; value=&quot;{JOBNR}&quot;&gt;
+                            &lt;/div&gt;
+                            &lt;div&gt;
+                              &lt;div&gt;
+                                &lt;button style=&quot;font-size: 16px; font-family: Helvetica, Arial, sans-serif; color: #102259 ; text-decoration: underline; display: inline-block; background-color: #ffffff; padding: 12px 18px 12px 18px; border-radius: 5px; border:none&quot;&gt;I&apos;m not interested →&lt;/button&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/form&gt;
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                  &lt;/table&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</BODY_HTML>
+      <AUTOGEN_TXT>X</AUTOGEN_TXT>
+     </SMTG_TMPL_CONT>
+    </CONTENT>
+   </SMTG>
+  </asx:values>
+ </asx:abap>
+</abapGit>
